@@ -1,0 +1,60 @@
+div{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 223, 199); 
+}
+
+.boom{
+    position: absolute;
+    
+    top: 80px;
+    bottom: 50px;
+    width: 100%;
+
+}
+.boom div{
+    float: left;
+    cursor: pointer;
+    height: 230px;
+    width: 150px;
+    text-align: center;
+    margin: 40px 20px;
+}
+.boom div img{
+    height: 180px;
+    width: 150px;
+}
+
+.last{
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: burlywood;
+}
+.last div{
+    bottom: 0px;
+    width: 80px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+.last a :hover{
+    cursor: pointer;
+    color: crimson;
+    font-weight: bold;
+}
+#bookshelf{
+    position: fixed;
+    left: 300px;
+}
+#index{
+    position: fixed;
+    left: 728px;
+}
+#person{
+    position: fixed;
+    right: 300px;
+}

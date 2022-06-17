@@ -1,0 +1,89 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 223, 199);
+}
+
+.back {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.back:hover, dd:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+dd {
+    text-align: left;
+    float: left;
+    width: 340px;
+    height: 30px;
+    font-size: 14px;
+}
+
+#intro {
+    position: absolute;
+    top: 60px;
+    left: 27px;
+    width: 670px;
+    height: 204px;
+    border: 2px solid #cfb53b;
+}
+
+#intro img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 200px;
+    width: 150px;
+}
+
+#intro div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 100px;
+    width: 500px;
+    font-size: 15px;
+}
+
+.bookname {
+    font-size: 30px;
+    font-family: 楷体;
+    font-weight: bold;
+    position: absolute;
+    left: 350px;
+    top: 20px;
+}
+
+.author {
+    font-size: 12px;
+    position: absolute;
+    left: 360px;
+    top: 60px;
+}
+
+#cata {
+    margin-left: 20px;
+    position: absolute;
+    top: 300px;
+    width: 1450px;
+    border: 2px solid #cfb53b;
+}
+
+dd{
+    margin-left: 20px;
+    padding: 0 0;
+}

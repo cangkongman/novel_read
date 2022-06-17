@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/novel_read_day.css">
+    <link rel="stylesheet" href="" class="dn">
+    <title></title>
+</head>
+
+<body>
+    <div id="root" class="container">
+        <div id="title"></div>
+        <div id="fintion_container" class="content"></div>
+        <div onclick="javascript:window.location.href='discuss.html'" 
+        onmouseover="this.style.cursor='pointer'"
+        onmouseout="this.style.cursor='default'"
+        style="border: 1px solid #cfb53b;width: 600px;height: 40px;
+        margin-left: 400px;text-align: center;line-height: 40px;font-size: 30px;">
+            点击查看讨论区
+        </div>
+        <div style="height: 30px;"></div>
+        <a href="bookshelf.html">
+            <div class="back">
+                返回书架
+            </div>
+        </a>
+
+        <div id="left-menu">
+            <div class="intro" style="display: none;" id="red_intro">
+                <span class="bookname">红楼梦</span>
+                <div class="text">《红楼梦》又名《石头记》
+                    故事讲述的是发生在一个未知朝代的封建大家庭中的人事物，其中以贾宝玉，林黛玉，薛宝钗三个人之间的感情纠葛为主线，通过对一些日常事件的描述，体现了在贾府的大观园中以金陵十二钗为主体的众女子的爱恨情愁。
+                </div>
+                <span class="author">作 者: 曹雪芹</span><img src="img/DRC.jpg">
+            </div>
+            <div class="intro" style="display: none;" id="west_intro">
+                <span class="bookname">西游记</span>
+                <div class="text">
+                    全书主要描写了孙悟空出世及大闹天宫后，遇见了唐僧、猪八戒、沙僧和白龙马，西行取经，一路上历经艰险、降妖伏魔，经历了九九八十一难，终于到达西天见到如来佛祖，最终五圣成真的故事。该小说以“唐僧取经”这一历史事件为蓝本，通过作者的艺术加工，深刻地描绘了明代社会现实。
+                </div><span class="author">作 者: 吴承恩</span><img src="img/J2W.jpg">
+            </div>
+            <div class="intro" style="display: none;" id="water_intro">
+                <span class="bookname">水浒传</span>
+                <div class="text">《水浒传》是第一部描写农民起义的小说，全书围绕“官逼民反”这一线索展开情节，表现了一群不堪暴政欺压的“好汉”揭杆而起，聚义水泊梁山，直至接受招安致使起义失败的全过程。
+                </div><span class="author">作 者: 施耐庵</span><img src="img/wm.jpg">
+            </div>
+            <div class="intro" style="display: none;" id="three_intro">
+                <span class="bookname">三国演义</span>
+                <div class="text">
+                    《三国演义》故事开始黄巾兵起义，结束于司马氏灭吴开晋，以描写战争为主，反映了魏、蜀汉、吴三个政治集团之间的政治和军事斗争，展现了从东汉末年到西晋初年之间近一百年的历史风云，并成功塑造了一批叱咤风云的英雄人物。
+                </div><span class="author">作 者: 罗贯中</span><img src="img/RTK.jpg">
+            </div>
+            <div style="border: 1px solid white; width: 100px;">
+                <div id="red">红楼梦</div>
+                <div id="west">西游记</div>
+                <div id="water">水浒传</div>
+                <div id="three">三国演义</div>
+            </div>
+        </div>
+
+        <div id="catalog">
+            <div id="red_cata" class="cho_cata">
+                红楼梦
+            </div>
+            <div id="west_cata" class="cho_cata">
+                西游记
+            </div>
+            <div id="water_cata" class="cho_cata">
+                水浒传
+            </div>
+            <div id="three_cata" class="cho_cata">
+                三国演义
+            </div>
+            <ul id="ulspd"></ul>
+        </div>
+
+        <div id="right-menu">
+            <div id="last_chapter">
+                上一章
+            </div>
+            <div id="cata_button">
+                目录
+            </div>
+            <div id="next_chapter">
+                下一章
+            </div>
+        </div>
+
+
+        <div id="night-button" class="button" style="display: block;">
+            <div class="icon-night" id="icon-night"></div>
+            <p id="p-night">夜间</p>
+        </div>
+        <div id="day-button" class="button" style="display: none;">
+            <div class="icon-day" id="icon-day"></div>
+            <p id="p-day">白天</p>
+        </div>
+        <div class="button" style="right: 150px;display: block;border: 1px solid #9e9e9e;line-height: 37px;"
+            id="favourite">
+            <p>收藏</p>
+        </div>
+        <div class="button" style="right: 150px;display: none;border: 1px solid #9e9e9e;" id="unfavourite">
+            <p>取消收藏</p>
+        </div>
+    </div>
+    <script src="js/jsonp_2.js"></script>
+    <script src="js/novel_read.js"></script>
+</body>
+
+</html>

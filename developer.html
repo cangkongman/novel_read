@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			background-image: url(img/11.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+		audio {
+			width: 400px;
+			height: 50px;
+			position: absolute;
+			bottom: 30px;
+			right: 40px;
+		}
+
+		.biaodan {
+			width: 400px;
+			height: 600px;
+			background-color: rgb(227, 233, 233);
+			margin-top: 100px;
+			margin-left: 1088px;
+		}
+
+		.tuxia {
+			margin-top: 40px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		label {
+			display: inline-block;
+			width: 200px;
+			text-align: left;
+			font-family: "楷体";
+			font-size: 28px;
+			padding-left: 25px;
+		}
+
+		input {
+			vertical-align: top;
+			font-family: "楷体";
+			width: 250px;
+			height: 33px;
+			font-size: 25px;
+			margin-left: 25px;
+			border-radius: 5px;
+			border: 1px solid #CCCCCC;
+		}
+
+		.tijiao {
+			width: 230px;
+			height: 33px;
+			font-family: "楷体";
+			font-size: 25px;
+			margin-left: 35px;
+			border-radius: 5px;
+			border: 1px solid #CCCCCC;
+			background-color: rgb(107, 164, 147);
+		}
+
+		.fanhui {
+			position: absolute;
+			top: 40px;
+			left: 55px;
+		}
+
+		.fanhui a {
+			text-decoration: none;
+			color: #777;
+			font-size: 15px;
+		}
+
+		.fanhui a:hover {
+			text-decoration: none;
+			color: #000000;
+			font-size: 15px;
+		}
+
+		.xiexie {
+			float: left;
+			width: 950px;
+			height: 620px;
+			margin-top: -175px;
+			margin-left: 180px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="xiexie">
+		<img src="img/bg9.png" width="100%" height="100%" />
+	</div>
+	<div style="position: absolute; top: 50px;left: 50px;line-height: 30px;">
+		<h3>目前已实现的功能</h3>
+		<ol>
+			<li>阅读小说（jsonp）</li>
+			<li>查看目录</li>
+			<li>点击目录跳转对应章节<br>（js获取for循环下标，url参数传递数据，jsonp）</li>
+			<li>点击上下章跳转对应章节</li>
+			<li>收藏功能（用的是localStorage）</li>
+			<li>切换日夜间模式（仅限novel_read.html）</li>
+		</ol>
+	</div>
+	<audio src="GoNotGently.mp3" controls="controls"></audio>
+	<div class="fanhui">
+		<a href="index.html">
+			<首页</a>
+	</div>
+
+	<div class="biaodan">
+		<img src="img/1.jpg" alt=""
+			style="float: left; margin-top: 30px; margin-left: 80px; width:201px;height:108.6px;">
+		<div class="tuxia">
+			<label for="name">姓名</label></br></br>
+			<input type="text" name="name" id="name" value="藏空满" /></br></br></br>
+			<label for="name">学号</label></br></br>
+			<input type="text" name="name" id="name" value="123456" /></br></br></br>
+			<label for="name">班级</label></br></br>
+			<input type="text" name="name" id="name" value="xx班" /></br></br>
+		</div>
+	</div>
+</body>
+
+</html>

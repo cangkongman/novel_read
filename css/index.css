@@ -1,0 +1,75 @@
+body {
+	background-color: cyan;
+	box-sizing: border-box;
+	background: url('../img/7.jpg') no-repeat;
+	background-size: cover; 
+}
+
+.top-right {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.top-right ul li {
+	float: left;
+	margin-right: 15px;
+	font-family: 宋体;
+}
+
+#main {
+	position: absolute;
+	top: 135px;
+	margin: 0 267.6px;
+	border: 1px solid black;
+	padding: 20px 0px;
+}
+
+.littlebox {
+	width: 206px;
+	float: left;
+	margin-left: 20px;
+	border: 1px solid black;
+}
+
+.littlebox li {
+	width: 206px;
+	height: 46px;
+	float: left;
+	background-color: black;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	font-family: 宋体;
+	color: cornsilk;
+}
+
+.book_list {
+	width: 206px;
+	float: left;
+	height: 264px;
+}
+
+.contant1 img {
+	height: 200px;
+	width: 160px;
+}
+
+.contant1 div {
+	padding: 20px 25px;
+	text-align: center;
+}
+
+#zuo,#you{
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent red transparent transparent;
+	position: absolute;
+	top: 210px;
+	left: -2px;
+}
+#you{
+	border-color: transparent transparent transparent red;
+	left: 192px;
+}

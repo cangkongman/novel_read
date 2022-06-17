@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>收藏夹</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bookmark.css">
+</head>
+
+<body>
+    <div class="ui-content" role="main">
+        <div class="text-detail">
+            <p class="text-title">我的收藏</p>
+            <hr class="sort-separate-line sort-separate-line20" />
+            <ul class="favourite-lists" id="favourite_lists">
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="flex justify-around align-center">
+                <div class="menu-item menu-item-1" id="back">返回</div>
+                <div class="menu-item menu-item-3" id="clear">清空</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let lists = document.getElementById('favourite_lists');
+        let clearData = document.getElementById('clear');
+
+        function setItem() {
+            let count = 0;
+            let htmlStr = ''
+            var book = ''
+            if (typeof localStorage.bookmarkLists !== 'undefined') {
+                let favourite_lists = JSON.parse(localStorage.getItem('bookmarkLists'))
+                lists.innerHTML = htmlStr;
+                console.log(favourite_lists, lists.innerHTML, typeof localStorage.bookmarkLists)
+
+                if (favourite_lists.length > 0) {
+                    favourite_lists.forEach(e => {
+                        if (e.book == 'red')
+                            book = '红楼梦'
+                        if (e.book == 'west')
+                            book = '西游记'
+                        if (e.book == 'water')
+                            book = '水浒传'
+                        if (e.book == 'three')
+                            book = '三国演义'
+                        htmlStr += '<li class="card-shadow">\n' +
+                            '          <span class="favourite-delete" data-index=' + count + '>\n' +
+                            '              <img src="./img/delete.svg" class="delete" alt="" onclick = del(this)>\n' +
+                            '          </span>\n' +
+                            '          <a href=' + e.url + '>\n' +
+                            '              <div>\n' +
+                            '                  <span class="favourite-title">' + e.chapter + '</span>\n' +
+                            '              </div>\n' +
+                            '              <div class="favourite-author">文 / <span id="favourite_author">' + book + '</span>  <span class="favourite-date">' + e.time + '</span></div>\n' +
+                            '              <div class="favourite-desc">' + e.digest + '</div>\n' +
+                            '          </a>\n' +
+                            '      </li>'
+                        count++
+                    })
+                }
+
+            }
+            if (count === 0)
+                htmlStr = '<img src="./img/noFound.svg" class="no-found" alt="404">'
+            lists.innerHTML = htmlStr;
+        }
+
+        setItem()
+
+        let back = document.getElementById('back');
+        back.onclick = function () {
+            window.location.href = './person.html'
+        }
+        clearData.onclick = function () {
+            localStorage.removeItem('bookmarkLists');
+            location.reload();
+        }
+        function del(obj) {
+            if (confirm("是否取消收藏")) {
+
+                obj.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode)
+                var chap = obj.parentNode.parentNode.getElementsByClassName('favourite-title')[0].innerHTML
+                var bookmarkLists = []
+
+                if (localStorage.getItem('bookmarkLists')) {
+                    var gkd = JSON.parse(localStorage.getItem('bookmarkLists'))
+                    for (var i = 0; i < gkd.length; i++) {
+                        if (gkd[i]['chapter'] == chap) {
+                            continue
+                        }
+                        bookmarkLists.push(gkd[i])
+                    }
+                }
+                localStorage['bookmarkLists'] = JSON.stringify(bookmarkLists)
+                setItem()
+            }
+        }
+    </script>
+</body>
+
+</html>

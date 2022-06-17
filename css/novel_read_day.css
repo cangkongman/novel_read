@@ -1,0 +1,236 @@
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    text-align:left;
+    width:100%;
+    background:#e9dfc7;
+}
+div{
+    box-sizing: border-box;
+}
+#title{
+    font-size: 25px;
+    font-family: 楷体;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+}
+.back {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.back:hover{
+    color: crimson;
+    font-weight: bold;
+
+}
+
+#left-menu{
+    position: fixed;
+    left: 0px;
+    top: 300px;
+    width: 100px;
+    color: white;
+}
+#red,#west,#water,#three{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: black;
+    border: 1px solid white;
+}
+#red:hover,#west:hover,#water:hover,#three:hover{
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+.intro {
+    position: fixed;
+    top: 300px;
+    left: 100px;
+    width: 670px;
+    height: 204px;
+    color: black;
+    border: 2px solid #cfb53b;
+    background-color: #e9dfc7;
+}
+
+.intro img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 200px;
+    width: 150px;
+}
+
+.intro div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 100px;
+    width: 500px;
+    font-size: 15px;
+}
+
+.bookname {
+    font-size: 30px;
+    font-family: 楷体;
+    font-weight: bold;
+    position: absolute;
+    left: 350px;
+    top: 20px;
+}
+
+.author {
+    font-size: 12px;
+    position: absolute;
+    left: 360px;
+    top: 60px;
+}
+.content{
+    color:#555;
+    width: 50%;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    line-height:31px;
+    padding:15px;
+    white-space: pre-line;
+    text-indent: 2em;
+}
+
+.button{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#night-button div{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+#day-button div{
+    position: absolute;
+    top: 4px;
+    left: 12px;
+}
+.button p{
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+.icon-day {
+    width: 19px;
+    height: 18px;
+    background: url(../img/day.png);
+    background-size: contain;
+}
+.icon-night {
+    width: 16px;
+    height: 16px;
+    background: url(../img/night.png);
+    background-size: contain;
+}
+.artical-action-mid{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:30%;
+}
+
+#last_chapter, #next_chapter, #cata_button{
+    position: fixed;
+    right: 0px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+}
+#last_chapter{
+    top: 300px;
+}
+#cata_button{
+    top: 340px;
+    width: 70px;
+}
+#next_chapter{
+    top: 380px;
+}
+#last_chapter:hover, #next_chapter:hover{
+    cursor: pointer;
+    width: 120px;
+}
+#cata_button:hover{
+    cursor: pointer;
+    width: 90px;
+}
+#catalog{
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    width: 400px;
+    top: 0px;
+    bottom: 0px;
+    left: -400px;
+    background-color:#e9dfc7;
+    border-right: 20px solid black;
+    border-top: 20px solid black;
+    color: black;
+}
+
+.cho_cata{
+    float: left;
+    width: 25%;
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius:  0 0 25px 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#catalog ul{
+    position: absolute;
+    top: 70px;
+}
+
+#catalog ul li{
+    border-bottom: 1px solid #b1ab9d;
+    font-size: 15px;
+    right: 300px;
+}
+#catalog ul li:hover{
+    color: red;
+    cursor: pointer;
+}

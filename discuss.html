@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/discuss.css">
+    <title>讨论区</title>
+</head>
+
+<body>
+
+    <div style="position: absolute;top: 40px;right: 55px;">
+        <a href="index.html">
+            首页</a>
+    </div>
+    <h1 style="font-size: 36px; margin: auto auto;margin-top: 60px; margin-left: 600px;">讨论区</h1>
+    <div id="intro"
+        style="height: 270px; width: 1200px;margin-top: 80px;margin-left: 100px; text-align: center; border: 1px solid black;">
+
+        <h3 style="font-size: 24px; font-weight:400;margin: auto auto;margin-top: 60px; ">除了点赞/踩，其他功能都不能用</h3>
+    </div>
+    <div id="pulish">
+        <textarea cols="80" name="msg" rows="5" placeholder="进行讨论" class="ipt-txt"></textarea>
+        <button type="submit" class="comment-submit">和大家一起讨论</button>
+    </div>
+    <div class="commend-list">
+        <div class="list-item">
+            <div class="con">
+                <a href="#">
+                    <div class="user">张三</div>
+                </a>
+                <p class="content">很精彩</p>
+                <div class="info">
+                    <span class="plad">来自安卓客户端</span>
+                    <span class="time">2021-06-17 18:59</span>
+                    <span class="like" onclick="like(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -25px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -89px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="hate" onclick="hate(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -153px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -217px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="reply" onclick="alert('开发中')">回复</span>
+                </div>
+                <div class="reply-box">
+                    <div class="reply-item"></div>
+                </div>
+                <div class="padding-box"></div>
+            </div>
+            <div class="con">
+                <a href="#">
+                    <div class="user">李四</div>
+                </a>
+                <p class="content">写的很好</p>
+                <div class="info">
+                    <span class="plad">来自安卓客户端</span>
+                    <span class="time">2021-06-17 18:59</span>
+                    <span class="like" onclick="like(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -25px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -89px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="hate" onclick="hate(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -153px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -217px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="reply" onclick="alert('开发中')">回复</span>
+                </div>
+                <div class="reply-box">
+                    <div class="reply-item"></div>
+                </div>
+                <div class="padding-box"></div>
+            </div>
+            <div class="con">
+                <a href="#">
+                    <div class="user">王朝</div>
+                </a>
+                <p class="content">很久没见过写的这么好的文章了</p>
+                <div class="info">
+                    <span class="plad">来自安卓客户端</span>
+                    <span class="time">2021-06-17 18:59</span>
+                    <span class="like" onclick="like(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -25px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -89px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="hate" onclick="hate(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -153px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -217px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="reply" onclick="alert('开发中')">回复</span>
+                </div>
+                <div class="reply-box">
+                    <div class="reply-item"></div>
+                </div>
+                <div class="padding-box"></div>
+            </div>
+            <div class="con">
+                <a href="#">
+                    <div class="user">马汉</div>
+                </a>
+                <p class="content">真是太精彩了</p>
+                <div class="info">
+                    <span class="plad">来自安卓客户端</span>
+                    <span class="time">2021-06-17 18:59</span>
+                    <span class="like" onclick="like(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -25px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -89px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="hate" onclick="hate(this)">
+                        <i style="display: inline-block;
+                        background-position: -153px -153px;"></i>
+                        <i style="display: none;
+                        background-position: -154px -217px;"></i>
+                        <span>0</span>
+                    </span>
+                    <span class="reply" onclick="alert('开发中')">回复</span>
+                </div>
+                <div class="reply-box">
+                    <div class="reply-item"></div>
+                </div>
+                <div class="padding-box"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+        function $$(classname) {
+            return document.getElementsByClassName(classname);
+        }
+        function like(obj) {
+            crg = obj.childNodes;
+            dft = obj.parentNode.childNodes[7].childNodes
+            if (crg[1].style.display == 'none') {
+                crg[1].style.display = 'inline-block'
+                crg[3].style.display = 'none'
+                crg[5].innerHTML = '0'
+                dft[1].style.display = 'inline-block'
+                dft[3].style.display = 'none'
+                dft[5].innerHTML = '0'
+            }
+            else {
+                crg[1].style.display = 'none'
+                crg[3].style.display = 'inline-block'
+                crg[5].innerHTML = '1'
+                dft[1].style.display = 'inline-block'
+                dft[3].style.display = 'none'
+                dft[5].innerHTML = '0'
+            }
+        }
+        function hate(obj) {
+            crg = obj.childNodes;
+            dft = obj.parentNode.childNodes[5].childNodes
+            console.log(crg[1].style.display)
+            if (crg[1].style.display == 'none') {
+                crg[1].style.display = 'inline-block'
+                crg[3].style.display = 'none'
+                crg[5].innerHTML = '0'
+                dft[1].style.display = 'inline-block'
+                dft[3].style.display = 'none'
+                dft[5].innerHTML = '0'
+            }
+            else {
+                console.log('a')
+                crg[1].style.display = 'none'
+                crg[3].style.display = 'inline-block'
+                crg[5].innerHTML = '1'
+                dft[1].style.display = 'inline-block'
+                dft[3].style.display = 'none'
+                dft[5].innerHTML = '0'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

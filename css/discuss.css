@@ -1,0 +1,120 @@
+.commend-list{
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    width: 1200px;
+}
+#pulish{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+.ipt-txt{
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    border: 2px solid black;
+    overflow: auto;
+    color: #555;
+    width: 600px;
+    height: 200px;
+    transition: 0s;
+    padding: 5px 10px;
+    line-height: normal;
+    outline: none;
+}
+.comment-submit{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 620px;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    min-width: 60px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.comment-list, .user {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding-bottom: 4px;
+    display: block;
+    word-wrap: break-word;
+}
+.list-item{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.user-face img{
+    width: 48px;
+    height: 48px;
+}
+.con{
+    position: relative;
+    margin-left: 85px;
+    margin-top: 50px;
+    padding: 22px 0 14px 0;
+    border-top: 1px solid #e5e9ef;
+}
+.user{
+    font-size: 20px;
+    font-weight: 600px;
+    line-height: 18px;
+    padding-bottom: 4px;
+    display: block;
+    word-wrap: break-word;
+    position: relative;
+    text-align: center;
+}
+.content{
+    border: 1px solid #99a2aa;
+    padding-left: 30px;
+    width: 1150px;
+    min-height: 100px;
+    line-height: 60px;
+}
+.info {
+    color: #99a2aa;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.like, .hate, .time {
+    margin-right: 20px;
+}
+
+.like i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-top;
+    margin-right: 5px;
+    background: url('../img/icons-comment.png') no-repeat;
+}
+.like:hover{
+    background-position: -153px -25px;
+}
+
+.hate i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-top;
+    margin-right: 5px;
+    background: url('../img/icons-comment.png') no-repeat;
+    background-position: -153px -153px;
+}
+.like:hover, .hate:hover, .reply:hover{
+    cursor: pointer;
+}

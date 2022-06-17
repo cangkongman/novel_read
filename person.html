@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/person.css">
+    <title>个人中心</title>
+</head>
+
+<body>
+    <div class="personal-header">
+        <ul class="header-nav">
+            <a href="index.html">
+                <li>我的首页</li>
+            </a>
+            <a href="bookshelf.html">
+                <li>我的书架</li>
+            </a>
+            <a href="#">
+                <li>个人设置</li>
+            </a>
+        </ul>
+    </div>
+    <div id="maincard">
+        <span id="personName">纵有疾风起人生不言弃</span>
+        <div>
+            <p style="margin-left: 70px;">显示用户信息（略）</p>
+            <div style="width: 80px; height: 30px; background: #54ba4e;text-align: center;
+            position: absolute;top:20px;right: 20px;
+            color:#fff;font-weight: 600;border: 1px solid #54ba4e;border-radius: 5px;">
+                修改信息</div>
+        </div>
+    </div>
+    <aside class="left_aside">
+        <ul>
+            <li id="bookmark"><a href="bookmark.html">收藏夹</a></li>
+            <li id="recentread"><a href="#">最近阅读</a></li>
+            <li id="recommend"><a href="#">猜你喜欢</a></li>
+        </ul>
+        <div id="markcard" style="display: none;">
+
+        </div>
+        <div id="none" style="display: none;">
+            暂未开发
+        </div>
+        <div id="none" style="display: none;">
+            暂未开发
+        </div>
+    </aside>
+    <section id="commend">
+        <div>
+            <h2>我的评论</h2>
+            <hr />
+            <div class="content">
+                <div class="item">
+                    <a>
+                        <img src="img/科幻小说.jpg">
+                    </a>
+                    <div>
+                        <h3 class="title">三体</h3>
+                        <p>强烈推荐</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="right_aside">
+        <div class="section-inner">
+            <h3 class="heading">我的阅读</h3>
+            <div class="content">
+                <ul class="list-unstyled">
+                    <li><a href="#">《送你一颗子弹》</a></li>
+                    <li><a href="#">《围城》</a></li>
+                    <li><a href="#">《稻草人手记》</a></li>
+                    <li><a href="#">《四世同堂》</a></li>
+                </ul>
+            </div>
+            <!--//content-->
+        </div>
+        <!--//section-inner-->
+    </aside>
+    <div style="position: absolute;top: 350px; right: 250px;">
+        <a href="developer.html" style="padding-bottom:2px; border-bottom:1px solid #000">开发者信息</a>
+        
+    </div>
+    <script src="js/person.js"></script>
+</body>
+
+</html>
